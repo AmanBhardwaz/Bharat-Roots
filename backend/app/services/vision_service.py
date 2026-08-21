@@ -18,13 +18,17 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 def detect_landmark(image_bytes: bytes):
     """Identify an Indian heritage site or landmark from image bytes using Gemini 3.6 Flash."""
 
-    if not GEMINI_API_KEY:
+    key = GEMINI_API_KEY
+    if key:
+        key = key.strip().strip('"').strip("'")
+
+    if not key:
         raise RuntimeError(
             "GEMINI_API_KEY is not configured."
         )
 
     client = genai.Client(
-        api_key=GEMINI_API_KEY
+        api_key=key
     )
 
     # Wrap the raw image bytes for Gemini
