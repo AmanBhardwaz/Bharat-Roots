@@ -1,0 +1,33 @@
+# Virtual environments
+backend/venv/
+venv/
+.venv/
+Env/
+env/
+
+# Environment files (Saves API keys from leaking)
+backend/.env
+.env
+*.env
+
+# Dependency directories
+frontend/node_modules/
+node_modules/
+
+# Production build outputs
+frontend/dist/
+dist/
+build/
+
+# IDE/Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS metadata
+.DS_Store
+Thumbs.db
