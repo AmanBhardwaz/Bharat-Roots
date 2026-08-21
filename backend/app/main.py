@@ -45,6 +45,23 @@ def root():
     }
 
 
+@app.get("/api/check-key")
+def check_key():
+    import os
+    key = os.getenv("GEMINI_API_KEY")
+    if not key:
+        return {"status": "missing", "message": "GEMINI_API_KEY is not set in environment."}
+
+    clean_key = key.strip().strip('"').strip("'")
+    return {
+        "status": "loaded",
+        "length": len(clean_key),
+        "starts_with": clean_key[:6],
+        "ends_with": clean_key[-4:] if len(clean_key) > 4 else "",
+        "raw_length_before_strip": len(key)
+    }
+
+
 @app.get("/health")
 def health():
     return {
