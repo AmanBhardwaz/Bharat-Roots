@@ -1,4 +1,9 @@
 import konarkImage from "../assets/konark.jpg";
+import redFortImage from "../assets/red_fort.jpeg";
+import ajantaImage from "../assets/ajanta.jpg";
+import meenakshiImage from "../assets/meenakshi_temple.jpeg";
+import goldenTempleImage from "../assets/golden temple.jpeg";
+import sanchiStupaImage from "../assets/sachi_stupa.webp";
 
 export const heritageSites = [
   {
@@ -131,8 +136,7 @@ export const heritageSites = [
       "Hosts annual Independence Day national celebrations."
     ],
     verified: true,
-    image:
-      "https://images.unsplash.com/photo-1592635196078-9fe1759738f6?auto=format&fit=crop&w=1200&q=80",
+    image: redFortImage,
   },
 
   {
@@ -158,8 +162,7 @@ export const heritageSites = [
       "Showcases Buddhist, Hindu, and Jain caves standing together."
     ],
     verified: true,
-    image:
-      "https://images.unsplash.com/photo-1600100397608-f010e423b971?auto=format&fit=crop&w=1200&q=80",
+    image: ajantaImage,
   },
 
   {
@@ -212,8 +215,7 @@ export const heritageSites = [
       "Houses the sacred Golden Lotus Tank at its core."
     ],
     verified: true,
-    image:
-      "https://images.unsplash.com/photo-1627894006066-b45668db86ec?auto=format&fit=crop&w=1200&q=80",
+    image: meenakshiImage,
   },
 
   {
@@ -239,8 +241,7 @@ export const heritageSites = [
       "Foundation stone was laid by Sufi saint Mian Mir."
     ],
     verified: true,
-    image:
-      "https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=1200&q=80",
+    image: goldenTempleImage,
   },
 
   {
@@ -266,7 +267,6 @@ export const heritageSites = [
       "Surrounded by ancient monastic ruins atop a quiet hill."
     ],
     verified: true,
-    image:
-      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
+    image: sanchiStupaImage,
   },
 ];

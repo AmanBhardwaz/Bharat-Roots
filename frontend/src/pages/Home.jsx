@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import heroImage from "../assets/hero.png";
 import {
   Map,
   Camera,
@@ -129,7 +130,7 @@ export default function Home() {
             <div className="overflow-hidden rounded-3xl shadow-2xl">
 
               <img
-                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80"
+                src={heroImage}
                 alt="Indian heritage"
                 className="h-125 w-full object-cover"
               />
