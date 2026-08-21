@@ -48,17 +48,16 @@ def root():
 @app.get("/api/check-key")
 def check_key():
     import os
-    key = os.getenv("GEMINI_API_KEY")
-    if not key:
-        return {"status": "missing", "message": "GEMINI_API_KEY is not set in environment."}
-
-    clean_key = key.strip().strip('"').strip("'")
+    env_keys = {}
+    for k, v in os.environ.items():
+        if "GOOGLE" in k or "GEMINI" in k:
+            if len(v) > 10:
+                env_keys[k] = f"{v[:6]}...{v[-4:]} (Len: {len(v)})"
+            else:
+                env_keys[k] = f"{v} (Len: {len(v)})"
     return {
         "status": "loaded",
-        "length": len(clean_key),
-        "starts_with": clean_key[:6],
-        "ends_with": clean_key[-4:] if len(clean_key) > 4 else "",
-        "raw_length_before_strip": len(key)
+        "env_keys": env_keys
     }
 
 
