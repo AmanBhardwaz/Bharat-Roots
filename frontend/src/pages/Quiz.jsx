@@ -20,61 +20,50 @@ const QUIZ_QUESTIONS = [
   {
     id: 1,
     question: "Which city is home to the Hawa Mahal?",
-    options: [
-      "Jaipur",
-      "Agra",
-      "Delhi",
-      "Udaipur",
-    ],
+    options: ["Jaipur", "Agra", "Delhi", "Udaipur"],
     answer: "Jaipur",
   },
-
   {
     id: 2,
-    question: "The Taj Mahal is located in which city?",
-    options: [
-      "Lucknow",
-      "Agra",
-      "Jaipur",
-      "Bhopal",
-    ],
+    question: "The Taj Mahal is located in which city on the banks of Yamuna?",
+    options: ["Lucknow", "Agra", "Jaipur", "Bhopal"],
     answer: "Agra",
   },
-
   {
     id: 3,
-    question: "The Konark Sun Temple is located in which state?",
-    options: [
-      "Rajasthan",
-      "Gujarat",
-      "Odisha",
-      "Madhya Pradesh",
-    ],
+    question: "The Konark Sun Temple is designed in the shape of a giant stone chariot in which state?",
+    options: ["Rajasthan", "Gujarat", "Odisha", "Madhya Pradesh"],
     answer: "Odisha",
   },
-
   {
     id: 4,
-    question: "Which of these is located in Delhi?",
-    options: [
-      "Qutub Minar",
-      "Hawa Mahal",
-      "Konark Sun Temple",
-      "Taj Mahal",
-    ],
-    answer: "Qutub Minar",
+    question: "Which monument features the monolithic Kailasa Temple carved from a single cliff?",
+    options: ["Ajanta & Ellora Caves", "Red Fort", "Gateway of India", "Qutub Minar"],
+    answer: "Ajanta & Ellora Caves",
   },
-
   {
     id: 5,
-    question: "Hawa Mahal is especially known for its distinctive windows and façade.",
-    options: [
-      "True",
-      "False",
-      "Only during festivals",
-      "Only from the inside",
-    ],
-    answer: "True",
+    question: "Sri Harmandir Sahib, also known as the Golden Temple, is located in which city?",
+    options: ["Amritsar", "Chandigarh", "Ludhiana", "Patiala"],
+    answer: "Amritsar",
+  },
+  {
+    id: 6,
+    question: "Which famous Buddhist monument featured on the 200 Rupee note was commissioned by Emperor Ashoka?",
+    options: ["Sanchi Stupa", "Konark Sun Temple", "Meenakshi Temple", "Hawa Mahal"],
+    answer: "Sanchi Stupa",
+  },
+  {
+    id: 7,
+    question: "Which South Indian temple is famous for its 14 towering entrance gopurams decorated with over 33,000 sculptures?",
+    options: ["Meenakshi Temple", "Golden Temple", "Sun Temple", "Brihadisvara Temple"],
+    answer: "Meenakshi Temple",
+  },
+  {
+    id: 8,
+    question: "On which date every year is the Indian national flag hoisted above the Red Fort's Lahori Gate?",
+    options: ["15th August", "26th January", "2nd October", "1st November"],
+    answer: "15th August",
   },
 ];
 

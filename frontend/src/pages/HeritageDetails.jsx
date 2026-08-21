@@ -504,7 +504,7 @@ export default function HeritageDetails() {
                   </div>
                 ) : (
                   <div className="mt-5 whitespace-pre-line leading-8 text-slate-600">
-                    {aiContent?.history ||
+                    {aiContent?.history || site?.history ||
                       `${site.name} is an important part of India's rich cultural and historical heritage.`}
                   </div>
                 )}
@@ -533,7 +533,7 @@ export default function HeritageDetails() {
                     </div>
                   ) : (
                     <div className="mt-4 whitespace-pre-line leading-8 text-slate-700">
-                      {aiContent?.significance ||
+                      {aiContent?.significance || site?.significance ||
                         `${site.name} represents an important part of India's architectural and cultural heritage.`}
                     </div>
                   )}
@@ -545,7 +545,7 @@ export default function HeritageDetails() {
 
               {/* INTERESTING FACTS */}
 
-              {(aiLoading || (aiContent?.facts && aiContent.facts.length > 0)) && (
+              {(aiLoading || ((aiContent?.facts || site?.facts) && (aiContent?.facts || site?.facts).length > 0)) && (
 
                 <section className="mt-12">
 
@@ -574,7 +574,7 @@ export default function HeritageDetails() {
                     </div>
                   ) : (
                     <ul className="mt-5 space-y-4">
-                      {aiContent.facts.map((fact, index) => (
+                      {(aiContent?.facts || site?.facts || []).map((fact, index) => (
                         <li
                           key={index}
                           className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
