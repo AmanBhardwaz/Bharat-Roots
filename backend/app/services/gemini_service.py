@@ -21,6 +21,8 @@ if GEMINI_API_KEY:
 if not GEMINI_API_KEY:
     raise RuntimeError("GEMINI_API_KEY is not configured.")
 
+# Diagnostic log to verify correct key loading in Render
+print(f"DEBUG: Loaded GEMINI_API_KEY: {GEMINI_API_KEY[:6]}...{GEMINI_API_KEY[-4:]} (Length: {len(GEMINI_API_KEY)})")
 
 client = genai.Client(
     api_key=GEMINI_API_KEY
