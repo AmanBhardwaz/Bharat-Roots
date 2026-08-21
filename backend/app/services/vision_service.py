@@ -1,4 +1,8 @@
 import os
+# Force Google GenAI SDK to use Developer API (AI Studio) instead of Vertex AI on Render/GCP hosts
+os.environ.pop("GOOGLE_APPLICATION_CREDENTIALS", None)
+os.environ.pop("GOOGLE_GENAI_USE_VERTEXAI", None)
+
 import json
 from pathlib import Path
 from dotenv import load_dotenv
