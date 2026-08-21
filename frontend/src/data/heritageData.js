@@ -26,7 +26,7 @@ export const heritageSites = [
       "The four minarets lean outward slightly to protect the main tomb from earthquakes.",
       "Over 20,000 artisans worked on its construction across 20 years.",
       "Features intricate Pietra Dura stone inlay craftsmanship.",
-      "Rests on a special timber foundation kept moist by the Yamuna River."
+      "Rests on a special timber foundation kept moist by the Yamuna River.",
     ],
     verified: true,
     image:
@@ -53,7 +53,7 @@ export const heritageSites = [
       "Built without a traditional deep foundation.",
       "Designed in the shape of Lord Krishna's crown.",
       "Ramps were used inside instead of stairs to move palanquins.",
-      "The front facade actually functions as the rear wall of the City Palace complex."
+      "The front facade actually functions as the rear wall of the City Palace complex.",
     ],
     verified: true,
     image:
@@ -80,7 +80,7 @@ export const heritageSites = [
       "Contains a 1,600-year-old iron pillar that has never rusted.",
       "Five storeys with distinct balconies and Quranic inscriptions.",
       "Built using materials from historic early Mehrauli structures.",
-      "Declared a UNESCO World Heritage site in 1993."
+      "Declared a UNESCO World Heritage site in 1993.",
     ],
     verified: true,
     image:
@@ -107,7 +107,7 @@ export const heritageSites = [
       "Built to align with the first rays of the rising sun.",
       "Shaped as a colossal 12-wheeled chariot pulled by 7 stone horses.",
       "Took 1,200 craftsmen 12 years to construct.",
-      "Famous for intricate stone relief sculptures."
+      "Famous for intricate stone relief sculptures.",
     ],
     verified: true,
     image: konarkImage,
@@ -133,7 +133,7 @@ export const heritageSites = [
       "Housed the Peacock Throne and Koh-i-Noor diamond.",
       "Features the iconic Lahori Gate and Diwan-i-Khas.",
       "Covers over 250 acres along the Yamuna River bank.",
-      "Hosts annual Independence Day national celebrations."
+      "Hosts annual Independence Day national celebrations.",
     ],
     verified: true,
     image: redFortImage,
@@ -159,7 +159,7 @@ export const heritageSites = [
       "200,000 tons of rock were excavated top-down over 18 years.",
       "Ajanta murals used natural mineral colors lasting over 1,500 years.",
       "Rediscovered by a British officer during a hunting trip in 1819.",
-      "Showcases Buddhist, Hindu, and Jain caves standing together."
+      "Showcases Buddhist, Hindu, and Jain caves standing together.",
     ],
     verified: true,
     image: ajantaImage,
@@ -185,7 +185,7 @@ export const heritageSites = [
       "Built using yellow basalt and reinforced concrete.",
       "Stands 26 meters tall with a central 15-meter dome.",
       "Serves as the departure point for ferry boats to Elephanta Caves.",
-      "Designed by Scottish architect George Wittet."
+      "Designed by Scottish architect George Wittet.",
     ],
     verified: true,
     image:
@@ -212,7 +212,7 @@ export const heritageSites = [
       "Adorned with over 33,000 colorful stone statues and relief figures.",
       "Features a famous Hall of 1,000 Pillars made of solid granite.",
       "Welcomes over 15,000 visitors every day.",
-      "Houses the sacred Golden Lotus Tank at its core."
+      "Houses the sacred Golden Lotus Tank at its core.",
     ],
     verified: true,
     image: meenakshiImage,
@@ -238,7 +238,7 @@ export const heritageSites = [
       "Gilded with 750 kg of pure 24-karat gold.",
       "Has 4 open doors welcoming people of all backgrounds and faiths.",
       "Surrounded by the sacred Amrit Sarovar water tank.",
-      "Foundation stone was laid by Sufi saint Mian Mir."
+      "Foundation stone was laid by Sufi saint Mian Mir.",
     ],
     verified: true,
     image: goldenTempleImage,
@@ -264,7 +264,7 @@ export const heritageSites = [
       "Buddha is represented by symbols like wheels, lotus flowers, and footprints.",
       "Featured on the reverse side of the 200 Indian Rupee currency note.",
       "Commissioned by Emperor Ashoka the Great.",
-      "Surrounded by ancient monastic ruins atop a quiet hill."
+      "Surrounded by ancient monastic ruins atop a quiet hill.",
     ],
     verified: true,
     image: sanchiStupaImage,
