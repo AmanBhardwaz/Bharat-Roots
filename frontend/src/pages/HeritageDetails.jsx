@@ -371,8 +371,8 @@ export default function HeritageDetails() {
               )}
 
               {isSaved
-                ? "Saved to Passport"
-                : "Save to Passport"}
+                ? "Saved to WishList"
+                : "Save to WishList"}
 
             </button>
 

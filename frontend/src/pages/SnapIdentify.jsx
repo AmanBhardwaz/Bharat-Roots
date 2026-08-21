@@ -444,7 +444,7 @@ export default function SnapIdentify() {
                   ) : (
                     <div className="mt-7 rounded-2xl bg-slate-50 p-5 text-slate-600 leading-7 text-sm">
                       <p className="font-bold text-slate-900 mb-1">What does this mean?</p>
-                      We currently verify each landmark added to Bharat Roots. If this is a famous monument, our researchers will soon add verified guides and 3D passport support for it!
+                      We currently verify each landmark added to Bharat Roots. If this is a famous monument, our researchers will soon add verified guides and 3D WishList support for it!
                     </div>
                   )}
 

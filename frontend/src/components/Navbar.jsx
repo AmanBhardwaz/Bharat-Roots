@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, Map, Camera, Bot, BookOpen, Award } from "lucide-react";
+import { Home, Map, Camera, Bot, Heart, Award } from "lucide-react";
 
 export default function Navbar() {
   return (
@@ -58,11 +58,11 @@ export default function Navbar() {
           </Link>
 
           <Link
-            to="/passport"
+            to="/wishlist"
             className="flex items-center gap-1.5 text-sm font-medium text-slate-700 transition hover:text-orange-600"
           >
-            <BookOpen size={17} />
-            Passport
+            <Heart size={17} />
+            WishList
           </Link>
 
           <Link

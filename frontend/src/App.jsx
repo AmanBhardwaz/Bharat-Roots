@@ -24,9 +24,13 @@ function App() {
           element={<HeritageDetails />}
         />
         <Route
-  path="/passport"
-  element={<HeritagePassport />}
-/>
+          path="/wishlist"
+          element={<HeritagePassport />}
+        />
+        <Route
+          path="/passport"
+          element={<HeritagePassport />}
+        />
         <Route path="/ai-guide" element={<AIGuide />} />
         <Route
           path="/snap"

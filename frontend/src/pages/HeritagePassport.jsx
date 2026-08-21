@@ -87,7 +87,7 @@ export default function HeritagePassport() {
               </p>
 
               <h1 className="mt-2 text-4xl font-black text-white md:text-5xl">
-                My Heritage Passport
+                My WishList
               </h1>
 
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
@@ -142,7 +142,7 @@ export default function HeritagePassport() {
               </p>
 
               <h2 className="mt-1 text-3xl font-black text-slate-900">
-                Your Heritage Journey
+                Your Heritage WishList
               </h2>
 
             </div>
@@ -169,7 +169,7 @@ export default function HeritagePassport() {
               </div>
 
               <h3 className="mt-5 text-2xl font-bold text-slate-900">
-                Your passport is empty
+                Your WishList is empty
               </h3>
 
               <p className="mx-auto mt-2 max-w-md text-slate-500">
@@ -338,7 +338,7 @@ function PassportCard({
             className="text-emerald-600"
           />
 
-          Added to your passport
+          Added to your WishList
 
         </div>
 
@@ -354,7 +354,7 @@ function PassportCard({
 
           <button
             onClick={onRemove}
-            title="Remove from passport"
+            title="Remove from WishList"
             className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-slate-500 transition hover:border-red-200 hover:bg-red-50 hover:text-red-500"
           >
             <Heart
