@@ -10,7 +10,7 @@ router = APIRouter()
 
 class ChatRequest(BaseModel):
     question: str
-    heritage_id: int
+    heritage_id: int | None = None
     previous_interaction_id: str | None = None
     language: str = "English"
 

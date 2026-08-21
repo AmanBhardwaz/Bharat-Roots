@@ -11,13 +11,9 @@ app = FastAPI(
 )
 
 
-import os
-
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
+    allow_origins=["http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -42,22 +38,6 @@ def root():
     return {
         "project": "Bharat Roots",
         "status": "running"
-    }
-
-
-@app.get("/api/check-key")
-def check_key():
-    import os
-    env_keys = {}
-    for k, v in os.environ.items():
-        if "GOOGLE" in k or "GEMINI" in k:
-            if len(v) > 10:
-                env_keys[k] = f"{v[:6]}...{v[-4:]} (Len: {len(v)})"
-            else:
-                env_keys[k] = f"{v} (Len: {len(v)})"
-    return {
-        "status": "loaded",
-        "env_keys": env_keys
     }
 
 

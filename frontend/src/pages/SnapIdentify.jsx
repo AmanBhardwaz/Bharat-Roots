@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import { API_BASE_URL } from "../config";
 
 export default function SnapIdentify() {
   const navigate = useNavigate();
@@ -60,7 +59,7 @@ export default function SnapIdentify() {
       formData.append("image", selectedImage);
 
       const response = await fetch(
-        `${API_BASE_URL}/api/identify`,
+        "http://127.0.0.1:8000/api/identify",
         {
           method: "POST",
           body: formData,

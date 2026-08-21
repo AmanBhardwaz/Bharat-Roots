@@ -1,8 +1,4 @@
 import os
-# Force Google GenAI SDK to use Developer API (AI Studio) instead of Vertex AI on Render/GCP hosts
-os.environ.pop("GOOGLE_APPLICATION_CREDENTIALS", None)
-os.environ.pop("GOOGLE_GENAI_USE_VERTEXAI", None)
-
 import json
 from pathlib import Path
 from dotenv import load_dotenv
@@ -22,17 +18,13 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 def detect_landmark(image_bytes: bytes):
     """Identify an Indian heritage site or landmark from image bytes using Gemini 3.6 Flash."""
 
-    key = GEMINI_API_KEY
-    if key:
-        key = key.strip().strip('"').strip("'")
-
-    if not key:
+    if not GEMINI_API_KEY:
         raise RuntimeError(
             "GEMINI_API_KEY is not configured."
         )
 
     client = genai.Client(
-        api_key=key
+        api_key=GEMINI_API_KEY
     )
 
     # Wrap the raw image bytes for Gemini

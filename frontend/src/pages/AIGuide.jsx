@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import { API_BASE_URL } from "../config";
 
 
 const SUPPORTED_LANGUAGES = [
@@ -236,7 +235,7 @@ export default function AIGuide() {
     try {
 
       const response = await fetch(
-        `${API_BASE_URL}/api/chat`,
+        "http://127.0.0.1:8000/api/chat",
         {
           method: "POST",
 

@@ -1,33 +1,26 @@
-# Virtual environments
-backend/venv/
+# Environment files
+.env
+.env.*
+*.env
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 venv/
 .venv/
-Env/
-env/
+backend/venv/
+backend/uploads/
 
-# Environment files (Saves API keys from leaking)
-backend/.env
-.env
-*.env
-
-# Dependency directories
-frontend/node_modules/
+# Node / JS
 node_modules/
-
-# Production build outputs
-frontend/dist/
+frontend/node_modules/
 dist/
 build/
 
-# IDE/Editors
+# IDE / OS
 .vscode/
 .idea/
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# OS metadata
 .DS_Store
-Thumbs.db
+*.log

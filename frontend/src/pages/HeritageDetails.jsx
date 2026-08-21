@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 
 import Navbar from "../components/Navbar";
-import { API_BASE_URL } from "../config";
 import { heritageSites } from "../data/heritageData";
 
 
@@ -88,7 +87,7 @@ export default function HeritageDetails() {
       setAiLoading(true);
       try {
         const response = await fetch(
-          `${API_BASE_URL}/api/heritage-info/${site.id}`
+          `http://127.0.0.1:8000/api/heritage-info/${site.id}`
         );
         const data = await response.json();
         if (data.success) {

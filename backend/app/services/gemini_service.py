@@ -1,8 +1,4 @@
 import os
-# Force Google GenAI SDK to use Developer API (AI Studio) instead of Vertex AI on Render/GCP hosts
-os.environ.pop("GOOGLE_APPLICATION_CREDENTIALS", None)
-os.environ.pop("GOOGLE_GENAI_USE_VERTEXAI", None)
-
 import json
 from pathlib import Path
 
@@ -19,14 +15,9 @@ load_dotenv(ENV_FILE)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-if GEMINI_API_KEY:
-    GEMINI_API_KEY = GEMINI_API_KEY.strip().strip('"').strip("'")
-
 if not GEMINI_API_KEY:
     raise RuntimeError("GEMINI_API_KEY is not configured.")
 
-# Diagnostic log to verify correct key loading in Render
-print(f"DEBUG: Loaded GEMINI_API_KEY: {GEMINI_API_KEY[:6]}...{GEMINI_API_KEY[-4:]} (Length: {len(GEMINI_API_KEY)})")
 
 client = genai.Client(
     api_key=GEMINI_API_KEY
